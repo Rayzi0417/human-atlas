@@ -23,6 +23,11 @@ The peripheral nerve traces in `models/nerves-0.bin[.gz]` originate from the Z-A
 - License: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
 - Adaptation: nerve curves were resampled (Catmull-Rom), registered onto the BodyParts3D coordinate frame via a bone-landmark similarity solve, and converted to tube meshes; pipeline in `scripts/peripheral-nerves/`. The derived nerve data is therefore licensed CC BY-SA 4.0 (share-alike applies to those files only); the rest of the atlas is unaffected.
 
+## Spinal cord and spinal nerve roots (procedural)
+
+The spinal cord, spinal nerve roots, dorsal/ventral roots, spinal ganglia and plexus trunks in `models/nerves-roots.bin[.gz]` and `models/nerves-extras.bin[.gz]` are procedurally generated (curve paths anchored on the vertebra bounds of the existing BodyParts3D dataset, swept into tube meshes). They introduce no new source data: pipeline in `scripts/spinal-roots/`, license follows the existing CC BY 4.0 coverage.
+
+
 ## Historical assets (not included in the current release)
 
 Earlier repository revisions included female reference anatomy: Kristen Browne and Heidi Schlehlein, Human Reference Atlas / HuBMAP, *3D Reference Organ Set for Female v1.5* (2023). CC BY 4.0. Geometry adapted for this viewer.
